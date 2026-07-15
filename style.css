@@ -1,0 +1,1201 @@
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+
+body{
+background:#f4f7fb;
+padding-top: 80px;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+background:#002b5b;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+position:sticky;
+top:0;
+}
+
+.logo h1{
+font-size:28px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:18px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:gold;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url("https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h2{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+width:70%;
+line-height:35px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#ff9800;
+padding:15px 35px;
+text-decoration:none;
+color:white;
+font-size:20px;
+border-radius:8px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#e68900;
+}
+
+/* ABOUT */
+
+.about{
+padding:70px;
+text-align:center;
+}
+
+.about h2{
+font-size:40px;
+color:#002b5b;
+margin-bottom:25px;
+}
+
+.about p{
+font-size:20px;
+line-height:35px;
+}
+
+/* SERVICES */
+
+.services{
+padding:70px;
+background:#eef4ff;
+}
+
+.services h2{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#002b5b;
+}
+
+.card{
+background:white;
+padding:30px;
+margin:20px auto;
+width:80%;
+border-radius:10px;
+box-shadow:0 0 15px rgba(0,0,0,.15);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#002b5b;
+margin-bottom:15px;
+font-size:28px;
+}
+
+.card p{
+font-size:18px;
+line-height:30px;
+}
+
+/* FOOTER */
+
+footer{
+background:#002b5b;
+color:white;
+text-align:center;
+padding:20px;
+font-size:18px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+padding:20px;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+.hero h2{
+font-size:34px;
+}
+
+.hero p{
+width:95%;
+font-size:18px;
+}
+
+.card{
+width:95%;
+}
+
+}
+
+
+
+form{
+width:70%;
+margin:auto;
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+font-size:18px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+border:none;
+cursor:pointer;
+}
+
+/* Statistics Section */
+
+.stats{
+background:#002b5b;
+padding:70px 20px;
+text-align:center;
+color:white;
+}
+
+.stats h2{
+font-size:40px;
+margin-bottom:50px;
+}
+
+.stats-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+}
+
+.stat-box{
+background:white;
+color:#002b5b;
+padding:30px;
+width:220px;
+border-radius:10px;
+box-shadow:0 0 15px rgba(0,0,0,.2);
+transition:.3s;
+}
+
+.stat-box:hover{
+transform:scale(1.08);
+}
+
+.stat-box h1{
+font-size:45px;
+color:#ff9800;
+margin-bottom:10px;
+}
+
+.stat-box p{
+font-size:20px;
+font-weight:bold;
+}
+
+/* Gallery */
+
+.gallery{
+
+padding:70px 30px;
+
+background:white;
+
+text-align:center;
+
+}
+
+.gallery h2{
+
+font-size:40px;
+
+margin-bottom:40px;
+
+color:#002b5b;
+
+}
+
+.gallery-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:20px;
+
+}
+
+.gallery-container img{
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+
+border-radius:12px;
+
+box-shadow:0 0 15px rgba(0,0,0,.2);
+
+transition:.4s;
+
+}
+
+.gallery-container img:hover{
+
+transform:scale(1.05);
+
+}
+/* WhatsApp Button */
+
+.whatsapp{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+z-index:999;
+
+}
+
+.whatsapp img{
+
+border-radius:50%;
+
+box-shadow:0 0 10px rgba(0,0,0,.4);
+
+transition:.3s;
+
+}
+
+.whatsapp img:hover{
+
+transform:scale(1.1);
+
+}
+
+/* Slider */
+
+.slider{
+position:relative;
+height:90vh;
+overflow:hidden;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+opacity:0;
+transition:1s;
+}
+
+.slide.active{
+opacity:1;
+}
+
+.slide img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.caption{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+color:white;
+background:rgba(0,0,0,.5);
+padding:30px;
+border-radius:10px;
+}
+
+.caption h2{
+font-size:45px;
+margin-bottom:20px;
+}
+
+.caption p{
+font-size:22px;
+margin-bottom:20px;
+}
+/* Footer */
+
+.footer{
+
+background:#001f3f;
+
+color:white;
+
+padding:50px 20px;
+
+text-align:center;
+
+}
+
+.footer h2{
+
+margin-bottom:20px;
+
+font-size:30px;
+
+}
+
+.footer p{
+
+font-size:18px;
+
+line-height:35px;
+
+}
+
+.footer a{
+
+color:#ff9800;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+.footer a:hover{
+
+color:white;
+
+}
+
+/* Job Cards */
+
+.job-card{
+
+background:white;
+
+padding:25px;
+
+margin:20px auto;
+
+width:80%;
+
+border-radius:10px;
+
+box-shadow:0 0 15px rgba(0,0,0,.15);
+
+transition:.3s;
+
+}
+
+.job-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.job-card h3{
+
+color:#002b5b;
+
+margin-bottom:15px;
+
+}
+
+.job-card p{
+
+font-size:18px;
+
+line-height:30px;
+
+}
+
+/* WHY CHOOSE US */
+
+.why-us{
+padding:70px 20px;
+background:#f8f9fa;
+text-align:center;
+}
+
+.why-us h2{
+font-size:40px;
+color:#002b5b;
+margin-bottom:40px;
+}
+
+.why-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.why-card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.why-card:hover{
+transform:translateY(-10px);
+}
+
+.why-card h3{
+color:#002b5b;
+margin-bottom:15px;
+}
+
+.why-card p{
+line-height:28px;
+font-size:17px;
+}
+/* Testimonials */
+
+.testimonial{
+
+padding:70px 20px;
+
+background:#eef4ff;
+
+text-align:center;
+
+}
+
+.testimonial h2{
+
+font-size:40px;
+
+margin-bottom:40px;
+
+color:#002b5b;
+
+}
+
+.testimonial-box{
+
+background:white;
+
+width:80%;
+
+margin:25px auto;
+
+padding:30px;
+
+border-radius:10px;
+
+box-shadow:0 0 15px rgba(0,0,0,.15);
+
+transition:.3s;
+
+}
+
+.testimonial-box:hover{
+
+transform:translateY(-8px);
+
+}
+
+.testimonial-box h3{
+
+color:#002b5b;
+
+margin-bottom:15px;
+
+}
+
+.testimonial-box p{
+
+font-size:18px;
+
+line-height:30px;
+
+}
+/* OUR CLIENTS */
+
+.clients{
+
+padding:70px 20px;
+
+background:#ffffff;
+
+text-align:center;
+
+}
+
+.clients h2{
+
+font-size:40px;
+
+color:#002b5b;
+
+margin-bottom:40px;
+
+}
+
+.client-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.client-card{
+
+background:#f4f7fb;
+
+padding:25px;
+
+border-radius:12px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+transition:.3s;
+
+}
+
+.client-card:hover{
+
+transform:translateY(-8px);
+
+background:#002b5b;
+
+color:white;
+
+}
+
+.client-card h3{
+
+margin-bottom:15px;
+
+}
+
+/* File Upload */
+
+input[type=file]{
+
+width:100%;
+
+padding:15px;
+
+border:2px dashed #002b5b;
+
+border-radius:10px;
+
+background:#f8f9fa;
+
+cursor:pointer;
+
+}
+
+input[type=file]:hover{
+
+background:#eef4ff;
+
+}
+/* Job Vacancy Table */
+
+.vacancies{
+
+padding:70px 20px;
+
+text-align:center;
+
+}
+
+.vacancies h2{
+
+font-size:40px;
+
+color:#002b5b;
+
+margin-bottom:30px;
+
+}
+
+table{
+
+width:90%;
+
+margin:auto;
+
+border-collapse:collapse;
+
+background:white;
+
+box-shadow:0 0 15px rgba(0,0,0,.15);
+
+}
+
+th{
+
+background:#002b5b;
+
+color:white;
+
+padding:15px;
+
+}
+
+td{
+
+padding:15px;
+
+border:1px solid #ddd;
+
+}
+
+tr:nth-child(even){
+
+background:#f4f7fb;
+
+}
+
+tr:hover{
+
+background:#e8f0ff;
+
+}
+/* Achievement Section */
+
+.stats{
+
+background:#002b5b;
+
+padding:70px 20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+.stats h2{
+
+font-size:40px;
+
+margin-bottom:40px;
+
+}
+
+.stats-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+}
+
+.stat-box{
+
+background:white;
+
+color:#002b5b;
+
+padding:30px;
+
+border-radius:12px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+transition:.3s;
+
+}
+
+.stat-box:hover{
+
+transform:scale(1.05);
+
+}
+
+.stat-box h1{
+
+font-size:45px;
+
+margin-bottom:15px;
+
+color:#ff9800;
+
+}
+
+.stat-box p{
+
+font-size:20px;
+
+font-weight:bold;
+
+}
+
+/* WhatsApp Floating Button */
+
+.whatsapp-btn{
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+width:60px;
+
+height:60px;
+
+background:#25D366;
+
+color:white;
+
+font-size:32px;
+
+text-decoration:none;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+z-index:999;
+
+transition:.3s;
+
+}
+
+.whatsapp-btn:hover{
+
+transform:scale(1.1);
+
+background:#1ebe5d;
+
+}
+
+/* Floating Call Button */
+
+.call-btn{
+
+position:fixed;
+
+bottom:95px;
+
+right:20px;
+
+width:60px;
+
+height:60px;
+
+background:#0d6efd;
+
+color:white;
+
+font-size:30px;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-decoration:none;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+z-index:999;
+
+transition:.3s;
+
+}
+
+.call-btn:hover{
+
+background:#084298;
+
+transform:scale(1.1);
+
+}
+
+/* Back To Top Button */
+
+.top-btn{
+
+position:fixed;
+
+bottom:170px;
+
+right:20px;
+
+width:60px;
+
+height:60px;
+
+background:#ff9800;
+
+color:white;
+
+font-size:30px;
+
+text-decoration:none;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+z-index:999;
+
+transition:.3s;
+
+}
+
+.top-btn:hover{
+
+background:#e68900;
+
+transform:scale(1.1);
+
+}
+/* Professional Header */
+
+header{
+
+position:sticky;
+
+top:0;
+
+background:#002b5b;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:15px 50px;
+
+z-index:1000;
+
+box-shadow:0 2px 10px rgba(0,0,0,.2);
+
+}
+
+.logo h2{
+
+color:white;
+
+font-size:24px;
+
+margin:0;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin-left:25px;
+
+font-size:18px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#ffcc00;
+
+}
+.slider{
+    height:550px;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+/* Professional Footer */
+
+.footer{
+
+background:#0b1f3a;
+
+color:white;
+
+padding:50px 20px;
+
+}
+
+.footer-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+.footer-box h2,
+.footer-box h3{
+
+color:#ffcc00;
+
+margin-bottom:15px;
+
+}
+
+.footer-box a{
+
+color:white;
+
+text-decoration:none;
+
+line-height:30px;
+
+}
+
+.footer-box a:hover{
+
+color:#ffcc00;
+
+}
+
+.footer hr{
+
+margin:30px 0;
+
+border:1px solid rgba(255,255,255,.2);
+
+}
+
+/* Premium Hover Effect */
+
+.service-card,
+.job-card,
+.client-card,
+.stat-box,
+.testimonial-box{
+
+transition:0.4s ease;
+
+cursor:pointer;
+
+}
+
+.service-card:hover,
+.job-card:hover,
+.client-card:hover,
+.stat-box:hover,
+.testimonial-box:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 15px 30px rgba(0,0,0,0.25);
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.btn,
+.whatsapp-btn,
+.call-btn,
+.top-btn{
+
+transition:all 0.3s ease;
+
+}
+
+.btn:hover,
+.whatsapp-btn:hover,
+.call-btn:hover,
+.top-btn:hover{
+
+transform:scale(1.1);
+
+}
+/* ==========================
+   Mobile Responsive
+========================== */
+
+@media (max-width:768px){
+
+header{
+    flex-direction:column;
+    padding:15px;
+    text-align:center;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+.slider h1{
+    font-size:32px;
+}
+
+.slider p{
+    font-size:16px;
+    padding:0 15px;
+}
+
+.about-container,
+.service-container,
+.client-container,
+.stats-container,
+.footer-container{
+    grid-template-columns:1fr;
+}
+
+table{
+    width:100%;
+    font-size:14px;
+}
+
+.whatsapp-btn,
+.call-btn,
+.top-btn{
+    width:50px;
+    height:50px;
+    font-size:24px;
+}
+
+}
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.logo img{
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+}
+
+/* Scroll Reveal Animation */
+
+.reveal{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Page Fade Animation */
+
+body{
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
