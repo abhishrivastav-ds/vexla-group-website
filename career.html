@@ -29,9 +29,9 @@
 
 <a href="services.html">Services</a>
 
-<a href="career.html">Contact</a>
+<a href="career.html">Career</a>
 
-<a href="contact.html">Career</a>
+<a href="contact.html">Contact</a>
 
 </nav>
 
@@ -47,29 +47,33 @@ Fill in your details and our recruitment team will contact you if a suitable opp
 
 <br>
 
-<form>
+<form action="https://api.web3forms.com/submit" method="POST">
 
-<input type="text" placeholder="Full Name" required>
+<input type="hidden" name="access_key" value="YOUR_NEW_ACCESS_KEY">
 
-<br><br>
+<input type="hidden" name="subject" value="New Job Application - VEXLA GROUP OF INDIA">
 
-<input type="tel" placeholder="Mobile Number" required>
-
-<br><br>
-
-<input type="email" placeholder="Email Address" required>
+<input type="text" name="name" placeholder="Full Name" required>
 
 <br><br>
 
-<input type="text" placeholder="Qualification">
+<input type="tel" name="mobile" placeholder="Mobile Number" required>
 
 <br><br>
 
-<input type="text" placeholder="Experience">
+<input type="email" name="email" placeholder="Email Address" required>
 
 <br><br>
 
-<input type="text" placeholder="Preferred Job Location">
+<input type="text" name="qualification" placeholder="Qualification">
+
+<br><br>
+
+<input type="text" name="experience" placeholder="Experience">
+
+<br><br>
+
+<input type="text" name="preferred_location" placeholder="Preferred Job Location">
 
 <br><br>
 
@@ -77,19 +81,17 @@ Fill in your details and our recruitment team will contact you if a suitable opp
 
 <br><br>
 
-<input type="file" accept=".pdf,.doc,.docx">
+<input type="file" name="resume" accept=".pdf,.doc,.docx">
 
 <br><br>
 
-
-<textarea rows="6" placeholder="Tell us about yourself"></textarea>
+<textarea name="about" rows="6" placeholder="Tell us about yourself"></textarea>
 
 <br><br>
 
-<button class="btn">Apply Now</button>
+<button type="submit" class="btn">Apply Now</button>
 
 </form>
-
 <br><br>
 
 <h2>Current Job Openings</h2>
