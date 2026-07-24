@@ -68,19 +68,29 @@ Lucknow, Uttar Pradesh
 
 <h2>Send Us Your Requirement</h2>
 
-<form>
+<form action="https://api.web3forms.com/submit" method="POST">
 
-<input type="text" placeholder="Your Name" required><br><br>
+<input type="hidden" name="access_key" value="eb12e7a1-c014-4b9d-9c06-496fabee788b">
 
-<input type="email" placeholder="Your Email" required><br><br>
+<input type="hidden" name="subject" value="New Contact Form Submission - VEXLA GROUP OF INDIA">
 
-<input type="tel" placeholder="Mobile Number" required><br><br>
-
-<textarea rows="6" placeholder="Write Your Message"></textarea>
+<input type="text" name="name" placeholder="Your Name" required>
 
 <br><br>
 
-<button class="btn">Submit</button>
+<input type="email" name="email" placeholder="Your Email" required>
+
+<br><br>
+
+<input type="tel" name="phone" placeholder="Mobile Number" required>
+
+<br><br>
+
+<textarea name="message" rows="6" placeholder="Write Your Message" required></textarea>
+
+<br><br>
+
+<button type="submit" class="btn">Submit</button>
 
 </form>
 
